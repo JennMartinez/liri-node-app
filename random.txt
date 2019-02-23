@@ -1,0 +1,3 @@
+BandsInTown, "Gareth Emery"
+Spotify,"Thriller"
+OMDB, "Casino"
