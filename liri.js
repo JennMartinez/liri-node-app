@@ -8,35 +8,35 @@ var moment = require("moment");
 var axios = require("axios");
 var Spotify = require("node-spotify-api");
 var inquirer = require("inquirer");
-console.log(Spotify);
 
 // Variables and Keys //
 var keys = require("./keys.js");
 var spotify = new Spotify(keys.spotify);
 var user = process.argv[2];
-var input = process.argv.slice(3).join(" ");
+var input = process.argv[3];
 var defaultSong = "Ice Ice Baby";
 var defaultMovie = "Hackers";
 
-
-function random() {
-switch (user) {
-    case "BandsInTown":
-        concerts(input);
-        break;
-    case "Spotify":
-        songs(input);
-        break;
-    case "OMDB":
-        movies(input);
-        break;
-    case "DoWhatItSays":
-        itSays();
-        break;
-    default:
-        console.log("Try Again!");
-        break;
-}
+// Switch Function, Users Input //
+function random(user,input) {
+    console.log('helpmewutisthis:',user)
+    switch (user) {
+        case "BandsInTown":
+            concerts(input);
+            break;
+        case "Spotify":
+            songs(input);
+            break;
+        case "OMDB":
+            movies(input);
+            break;
+        case "DoWhatItSays":
+            itSays(user,input);
+            break;
+        default:
+            console.log("Choices: \n- BandsInTown, \n- Spotify, \n- OMDB, \n- DoWhatItSays");
+            break;
+    }
 }
 
 // Bands in town //
@@ -105,35 +105,14 @@ function itSays() {
         if (error) {
             return console.log(error);
         } else {
-            console.log(data);
-        var dataArray = data.split(",");
-        random(dataArray[0], dataArray[1]);
+            console.log("reading")
+            data = data.split(",");
+            user = data[0]
+            input = data[1]
+            console.log("user", user,"data" ,data);
+            random(user, input);
         }
+      
     });
 };
-
-
-// Inquirer NPM //
-inquirer.prompt([
-    {
-type: "list",
-name: "answer",
-message: "What would you like to do?",
-choices: ["BandsInTown", "Spotify", "OMDB", "DoWhatItSays"],
-    }  
-]).then(function(response) {
-switch(response.answer) {
-    case "BandsInTown":
-        concerts(input);
-    break;
-    case "Spotify":
-        songs(input);
-    break;
-    case "OMDB":
-        movies(input);
-    break;
-    case "DoWhatItSays":
-        itSays();
-    break;
-    }  
-});
+random(user, input)
