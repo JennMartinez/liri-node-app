@@ -56,7 +56,9 @@ Information displayed:
         - A link to the song from Spotify.
         - The album that the song is from.
 
-Below is a link to screenshots of the four different commands, which will provide a visual step-by-step process of how LIRI can be utilized:
+Below are screenshots of the four different commands, which will provide a visual step-by-step process of how LIRI can be utilized:
 
-https://github.com/JennMartinez/liri-node-app/tree/master/Images
+**BandsInTown**
+![Image of product_list](images/BandsInTown - Command Line.jpg)
+
 
