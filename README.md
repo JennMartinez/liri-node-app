@@ -59,6 +59,6 @@ Information displayed:
 Below are screenshots of the four different commands, which will provide a visual step-by-step process of how LIRI can be utilized:
 
 **BandsInTown**
-![Image of product_list](liri-node-app/images/BandsInTown - Command Line.jpg)
+![Image of product_list](assets/images/BandsInTown - Command Line.jpg)
 
 
