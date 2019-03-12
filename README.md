@@ -59,25 +59,25 @@ Information displayed:
 Below are screenshots of the four different commands, which will provide a visual step-by-step process of how LIRI can be utilized:
 
 **BandsInTown - Command Line**
-![Image of bitl](assets/images/bitl.png)
+![Image of bitl](assets/Images/bitl.png)
 
 **BandsInTown - User Request Displayed**
-![Image of bitur](assets/images/bitur.png)
+![Image of bitur](assets/Images/bitur.png)
 
 **DoWhatItSays - Command Line**
-![Image of dwiscl](assets/images/dwiscl.png)
+![Image of dwiscl](assets/Images/dwiscl.png)
 
 **DoWhatItSays - User Request Displayed**
-![Image of dwisur](assets/images/dwisur.png)
+![Image of dwisur](assets/Images/dwisur.png)
 
 **OMDB - Command Line**
-![Image of omdbcl](assets/images/omdbcl.png)
+![Image of omdbcl](assets/Images/omdbcl.png)
 
 **OMDB - User Request Displayed**
-![Image of omdbur](assets/images/omdbur.png)
+![Image of omdbur](assets/Images/omdbur.png)
 
 **Spotify - Command Line**
-![Image of scl](assets/images/scl.png)
+![Image of scl](assets/Images/scl.png)
 
 **Spotify - Command Line**
-![Image of sur](assets/images/sur.png)
+![Image of sur](assets/Images/sur.png)
