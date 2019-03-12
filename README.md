@@ -59,7 +59,7 @@ Information displayed:
 Below are screenshots of the four different commands, which will provide a visual step-by-step process of how LIRI can be utilized:
 
 **BandsInTown - Command Line**
-![Image of bitcl](bitcl.png)
+![Image of bitcl](./bitcl.png)
 
 **BandsInTown - User Request Displayed**
 ![Image of bitur](assets/images/bitur.png)
